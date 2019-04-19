@@ -9,7 +9,7 @@ target 'RNstudy' do
   pod 'SDWebImage'
   pod 'Alamofire'
   pod 'Moya'
-  pod 'HandyJSON'
+  pod 'HandyJSON', '5.0.0-beta'
 
   target 'RNstudyTests' do
     inherit! :search_paths
