@@ -14,6 +14,12 @@
 		00326F9B226969CF0026461C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00326F99226969CF0026461C /* LaunchScreen.storyboard */; };
 		00326FA6226969CF0026461C /* RNstudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00326FA5226969CF0026461C /* RNstudyTests.swift */; };
 		00326FB1226969CF0026461C /* RNstudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00326FB0226969CF0026461C /* RNstudyUITests.swift */; };
+		00326FC1226DC15E0026461C /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00326FC0226DC15E0026461C /* MainTabBarViewController.swift */; };
+		00326FC7226DC4250026461C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00326FC6226DC4250026461C /* MainViewController.swift */; };
+		00326FCD226DC4B90026461C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00326FCC226DC4B90026461C /* BaseViewController.swift */; };
+		00326FCF226DC4F60026461C /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00326FCE226DC4F60026461C /* CategoryViewController.swift */; };
+		00326FD1226DC5050026461C /* ShopCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00326FD0226DC5050026461C /* ShopCartViewController.swift */; };
+		00326FD3226DC50C0026461C /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00326FD2226DC50C0026461C /* MineViewController.swift */; };
 		3928E554992C130BDB829A72 /* Pods_RNstudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C59853CF6CB8E16A8E2BFD /* Pods_RNstudyUITests.framework */; };
 		986D0C4839B4464C4812FB89 /* Pods_RNstudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269BF316E87B8CAA45FE830D /* Pods_RNstudy.framework */; };
 		C2B21764A8298AB56537D7AF /* Pods_RNstudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6F298F2503B3CC286E0346 /* Pods_RNstudyTests.framework */; };
@@ -50,6 +56,12 @@
 		00326FAC226969CF0026461C /* RNstudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNstudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00326FB0226969CF0026461C /* RNstudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNstudyUITests.swift; sourceTree = "<group>"; };
 		00326FB2226969CF0026461C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00326FC0226DC15E0026461C /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		00326FC6226DC4250026461C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		00326FCC226DC4B90026461C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		00326FCE226DC4F60026461C /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		00326FD0226DC5050026461C /* ShopCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCartViewController.swift; sourceTree = "<group>"; };
+		00326FD2226DC50C0026461C /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		071BFADD2F73EE521B96705E /* Pods-RNstudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNstudyTests.debug.xcconfig"; path = "Target Support Files/Pods-RNstudyTests/Pods-RNstudyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		19F7FCAA9BA2B7CF0CA2D72D /* Pods-RNstudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNstudy.release.xcconfig"; path = "Target Support Files/Pods-RNstudy/Pods-RNstudy.release.xcconfig"; sourceTree = "<group>"; };
 		269BF316E87B8CAA45FE830D /* Pods_RNstudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNstudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +126,10 @@
 		00326F8F226969CD0026461C /* RNstudy */ = {
 			isa = PBXGroup;
 			children = (
+				00326FCB226DC4AB0026461C /* Common */,
+				00326FC3226DC3B40026461C /* Cloudo */,
 				00326F90226969CD0026461C /* AppDelegate.swift */,
+				00326FC0226DC15E0026461C /* MainTabBarViewController.swift */,
 				00326F92226969CD0026461C /* ViewController.swift */,
 				00326F94226969CD0026461C /* Main.storyboard */,
 				00326F97226969CF0026461C /* Assets.xcassets */,
@@ -140,6 +155,57 @@
 				00326FB2226969CF0026461C /* Info.plist */,
 			);
 			path = RNstudyUITests;
+			sourceTree = "<group>";
+		};
+		00326FC3226DC3B40026461C /* Cloudo */ = {
+			isa = PBXGroup;
+			children = (
+				00326FC5226DC4010026461C /* Main */,
+				00326FCA226DC44D0026461C /* Categry */,
+				00326FC9226DC44B0026461C /* ShopCart */,
+				00326FC8226DC4300026461C /* Mine */,
+			);
+			name = Cloudo;
+			sourceTree = "<group>";
+		};
+		00326FC5226DC4010026461C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				00326FC6226DC4250026461C /* MainViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		00326FC8226DC4300026461C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				00326FD2226DC50C0026461C /* MineViewController.swift */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
+		00326FC9226DC44B0026461C /* ShopCart */ = {
+			isa = PBXGroup;
+			children = (
+				00326FD0226DC5050026461C /* ShopCartViewController.swift */,
+			);
+			name = ShopCart;
+			sourceTree = "<group>";
+		};
+		00326FCA226DC44D0026461C /* Categry */ = {
+			isa = PBXGroup;
+			children = (
+				00326FCE226DC4F60026461C /* CategoryViewController.swift */,
+			);
+			name = Categry;
+			sourceTree = "<group>";
+		};
+		00326FCB226DC4AB0026461C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				00326FCC226DC4B90026461C /* BaseViewController.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		1C7F86CB6F63ABCED847058B /* Pods */ = {
@@ -399,8 +465,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00326FCD226DC4B90026461C /* BaseViewController.swift in Sources */,
+				00326FC1226DC15E0026461C /* MainTabBarViewController.swift in Sources */,
 				00326F93226969CD0026461C /* ViewController.swift in Sources */,
+				00326FD3226DC50C0026461C /* MineViewController.swift in Sources */,
 				00326F91226969CD0026461C /* AppDelegate.swift in Sources */,
+				00326FCF226DC4F60026461C /* CategoryViewController.swift in Sources */,
+				00326FD1226DC5050026461C /* ShopCartViewController.swift in Sources */,
+				00326FC7226DC4250026461C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
